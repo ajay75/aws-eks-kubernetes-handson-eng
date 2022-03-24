@@ -24,9 +24,9 @@ kubectl apply -f https://raw.githubusercontent.com/kubernetes/examples/master/gu
 
 # 5.2 Deploy Redis Slave
 ```
-kubectl apply -f https://raw.githubusercontent.com/kubernetes/examples/master/guestbook-go/redis-slave-controller.json
+kubectl apply -f https://raw.githubusercontent.com/kubernetes/examples/master/guestbook-go/redis-replica-controller.json
 
-kubectl apply -f https://raw.githubusercontent.com/kubernetes/examples/master/guestbook-go/redis-slave-service.json
+kubectl apply -f https://raw.githubusercontent.com/kubernetes/examples/master/guestbook-go/redis-replica-service.json
 ```
 
 # 5.3 Deploy frontend app
