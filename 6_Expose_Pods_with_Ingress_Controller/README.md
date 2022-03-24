@@ -39,12 +39,11 @@ kubectl create namespace nginx-ingress-controller
 # helm install nginx-ingress-controller stable/nginx-ingress -n nginx-ingress-controller
 
 # add new repo ingress-nginx/ingress-nginx
-helm repo add ingress-nginx https://kubernetes.github.io/ingress-nginx
-helm repo add stable https://charts.helm.sh/stable
+helm repo add bitnami https://charts.bitnami.com/bitnami
 helm repo update
 
 # install
-helm install nginx-ingress-controller ingress-nginx/ingress-nginx
+helm install nginx-ingress-controller bitnami/nginx-ingress-controller -n nginx-ingress-controller --version 9.1.12
 ```
 
 Output
