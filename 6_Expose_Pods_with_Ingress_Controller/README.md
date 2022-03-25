@@ -345,7 +345,7 @@ Ref: https://docs.aws.amazon.com/acm/latest/userguide/import-certificate-api-cli
 aws acm import-certificate \
   --certificate fileb://elb.amazonaws.com.cert.pem \
   --private-key fileb://elb.amazonaws.com.key.pem \
-  --region us-west-2
+  --region us-east-1
 ```
 
 Output shows certicate ARN (Amazon Resource Name)
@@ -383,9 +383,9 @@ controller:
 ## 4. Upgrade Nginx ingress controller Helm chart
 ```bash
 helm upgrade nginx-ingress-controller \
-    ingress-nginx/ingress-nginx \
-    -n nginx-ingress-controller \
-    -f nginx_helm_chart_overrides_ssl_termination_at_elb.yaml
+             bitnami/nginx-ingress-controller \
+          -n nginx-ingress-controller \
+          -f nginx_helm_chart_overrides_ssl_termination_at_elb.yaml
 ```
 
 Check `nginx-ingress-controller-controller` service in `nginx-ingress-controller` namespace have annotation added
