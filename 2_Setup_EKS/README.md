@@ -146,7 +146,7 @@ Output
 ```bash
 [ℹ]  eksctl version 0.21.0
 [ℹ]  using region us-west-2
-[ℹ]  setting availability zones to [us-west-2b us-west-2a us-west-2c]
+[ℹ]  setting availability zones to [us-east-1a us-east-1d]
 [ℹ]  subnets for us-west-2b - public:192.168.0.0/19 private:192.168.96.0/19
 [ℹ]  subnets for us-west-2a - public:192.168.32.0/19 private:192.168.128.0/19
 [ℹ]  subnets for us-west-2c - public:192.168.64.0/19 private:192.168.160.0/19
