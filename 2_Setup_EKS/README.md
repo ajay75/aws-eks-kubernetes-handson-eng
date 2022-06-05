@@ -131,7 +131,7 @@ eks_worker_nodes_demo.pem
 eksctl create cluster \
     --name eks-from-eksctl \
     --version 1.20 \
-    --region us-west-2 \
+    --region us-east-1 \
     --nodegroup-name workers \
     --node-type t3.medium \
     --nodes 2 \
