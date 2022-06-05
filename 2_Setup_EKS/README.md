@@ -182,7 +182,7 @@ Once you have created a cluster, you will find that cluster credentials were add
 
 ```bash
 # get info about cluster resources
-aws eks describe-cluster --name eks-from-eksctl --region us-west-2
+aws eks describe-cluster --name eks-from-eksctl --region us-east-1
 ```
 
 Output
